@@ -1,0 +1,6 @@
+name: Create Table DB
+type: module
+description: 'This is an example to create custom table in db'
+package: Mafe
+version: '8.0.0'
+core: 8.x

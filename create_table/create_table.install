@@ -1,0 +1,43 @@
+<?php
+
+function create_table_schema(){
+    $schema['register'] = array(
+        'description' => 'The table for storing the register data.',
+        'fields' => array(
+            'id' => array(
+                'description' => 'The primary identifier for register.',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'name' => array(
+                'description' => 'people name.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+            ),
+            'lastname' => array(
+                'description' => 'people lastname.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+            ),
+            'gender' => array(
+                'description' => 'people gender.',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+            ),
+            'age' => array(
+                'description' => 'people age.',
+                'type' => 'int',
+                'not null' => TRUE,
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+    return $schema;
+}
+
+  
+  
